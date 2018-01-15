@@ -6,17 +6,27 @@ import { RoutingModule } from './routing.module';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './hero/nav/top-nav/top-nav.component';
+import { DashboardComponent } from './hero/dashboard/dashboard.component';
+import { HerosComponent } from './hero/heros/heros.component';
+import { HeroComponent } from './hero/heros/hero/hero.component';
+import { NewHeroComponent } from './hero/heros/new-hero/new-hero.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavComponent
+    TopNavComponent,
+    DashboardComponent,
+    HerosComponent,
+    HeroComponent,
+    NewHeroComponent,
   ],
   imports: [
     RoutingModule,
     NgbModule.forRoot(),
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

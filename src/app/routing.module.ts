@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes } from '@angular/router';
-import { RouterModule } from '@angular/router/src/router_module';
+import { Routes, RouterModule } from '@angular/router';
+import { DashboardComponent } from './hero/dashboard/dashboard.component';
+import { HerosComponent } from './hero/heros/heros.component';
 
 const routes: Routes =  [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  // { path: 'dashboard', component:  }
+  { path: 'dashboard', component:  DashboardComponent},
+  { path: 'heros', component: HerosComponent}
 
 ];
 
